@@ -1,0 +1,79 @@
+wandb_version: 1
+
+'data:':
+  desc: null
+  value: C4 200M
+model:
+  desc: null
+  value: baseModel
+files_taken:
+  desc: null
+  value: 1
+optimizer:
+  desc: null
+  value: adam
+loss:
+  desc: null
+  value: categorical_crossentropy
+metric:
+  desc: null
+  value: accuracy
+latent_dim:
+  desc: null
+  value: 256
+epoch:
+  desc: null
+  value: 1
+batch_size:
+  desc: null
+  value: 64
+validation_split:
+  desc: null
+  value: 0.2
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.5
+    cli_version: 0.16.0
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1700133799.748183
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 2
+      - 7
+      - 16
+      - 23
+      - 38
+      - 39
+      4: 3.11.5
+      5: 0.16.0
+      8:
+      - 3
+      - 5
+      13: windows-amd64
+    m:
+    - 1: batch/batch_step
+      6:
+      - 3
+    - 1: batch/loss
+      5: 1
+      6:
+      - 1
+    - 1: batch/accuracy
+      5: 1
+      6:
+      - 1
+    - 1: batch/learning_rate
+      5: 1
+      6:
+      - 1

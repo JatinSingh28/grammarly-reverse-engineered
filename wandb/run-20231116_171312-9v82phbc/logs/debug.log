@@ -1,0 +1,27 @@
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Configure stats pid to 5732
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Loading settings from C:\Users\sagoi\.config\wandb\settings
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Loading settings from C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\settings
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'base.py', 'program_abspath': 'C:\\Users\\sagoi\\OneDrive\\Desktop\\Grammarly\\base.py', 'program': 'C:\\Users\\sagoi\\OneDrive\\Desktop\\Grammarly\\base.py'}
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_init.py:_log_setup():524] Logging user logs to C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231116_171312-9v82phbc\logs\debug.log
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_init.py:_log_setup():525] Logging internal logs to C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231116_171312-9v82phbc\logs\debug-internal.log
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_init.py:init():564] calling init triggers
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'data:': 'C4 200M', 'model': 'baseModelV1', 'files_taken': 1, 'n_rows': 10, 'optimizer': 'adam', 'loss': 'categorical_crossentropy', 'metric': 'accuracy', 'latent_dim': 256, 'epoch': 1, 'batch_size': 64, 'validation_split': 0.2}
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_init.py:init():614] starting backend
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [wandb_init.py:init():618] setting up manager
+2023-11-16 17:13:12,903 INFO    MainThread:5732 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2023-11-16 17:13:12,927 INFO    MainThread:5732 [wandb_init.py:init():624] backend started and connected
+2023-11-16 17:13:12,935 INFO    MainThread:5732 [wandb_init.py:init():716] updated telemetry
+2023-11-16 17:13:12,943 INFO    MainThread:5732 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-11-16 17:13:15,082 INFO    MainThread:5732 [wandb_run.py:_on_init():2254] communicating current version
+2023-11-16 17:13:17,159 INFO    MainThread:5732 [wandb_run.py:_on_init():2263] got version response 
+2023-11-16 17:13:17,160 INFO    MainThread:5732 [wandb_init.py:init():800] starting run threads in backend
+2023-11-16 17:13:19,127 INFO    MainThread:5732 [wandb_run.py:_console_start():2233] atexit reg
+2023-11-16 17:13:19,127 INFO    MainThread:5732 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2023-11-16 17:13:19,127 INFO    MainThread:5732 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2023-11-16 17:13:19,127 INFO    MainThread:5732 [wandb_run.py:_redirect():2178] Redirects installed.
+2023-11-16 17:13:19,127 INFO    MainThread:5732 [wandb_init.py:init():841] run started, returning control to user process
+2023-11-16 17:13:30,769 WARNING MsgRouterThr:5732 [router.py:message_loop():77] message_loop has been closed

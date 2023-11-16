@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-11-16T11:36:14.386831",
+    "startedAt": "2023-11-16T11:36:08.556411",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\sagoi\\OneDrive\\Desktop\\Grammarly\\base.py",
+    "codePathLocal": "base.py",
+    "codePath": "base.py",
+    "host": "Asus",
+    "username": "sagoi",
+    "executable": "C:\\Users\\sagoi\\OneDrive\\Desktop\\Grammarly\\venv\\Scripts\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 1496.0,
+        "min": 0.0,
+        "max": 2600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1496.0,
+            "min": 0.0,
+            "max": 2600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 225.43683242797852,
+            "used": 180.1321144104004
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2050",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2050",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.677627563476562
+    }
+}

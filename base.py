@@ -1,0 +1,138 @@
+import numpy as np
+import pandas as pd
+import tensorflow as tf
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, LSTM, Dense
+import tensorflow_addons as tfa
+import wandb
+from wandb.keras import WandbMetricsLogger, WandbModelCheckpoint
+import pickle
+
+#configrations
+epochs = 20
+batch_size = 64
+validation_split = 0.2
+model_name = "baseModelV1"
+n_rows=1000
+
+wandb.init(
+    # set the wandb project where this run will be logged
+    project="grammarly-reverse-engineered-base-model",
+
+    # track hyperparameters and run metadata with wandb.config
+    config={
+        "data:":"C4 200M",
+        "model": model_name,
+        "files_taken":1,
+        "n_rows":n_rows,
+        "optimizer":"adam", 
+        "loss":"categorical_crossentropy", 
+        "metric": "accuracy",
+        "latent_dim":256,
+        "epoch": epochs,
+        "batch_size": batch_size,
+        "validation_split":validation_split
+    }
+)
+
+config = wandb.config
+
+# Example dataset with incorrect and correct sentences
+df = pd.read_csv("./data/data1.csv",nrows=n_rows)
+
+incorrect_sentences = df['input']
+correct_sentences = df['target']
+# incorrect_sentences = [
+#     'She is go too school.',
+#     'He hav a red car.',
+#     'I am alwayz happy.'
+# ]
+# correct_sentences = [
+#     'She goes to school.',
+#     'He has a red car.',
+#     'I am always happy.'
+# ]
+
+
+
+# Generate vocabulary sets
+input_characters = set(' '.join(incorrect_sentences + correct_sentences))
+target_characters = input_characters
+
+# Generate character-level index mappings
+input_token_index = dict([(char, i) for i, char in enumerate(input_characters)])
+target_token_index = input_token_index
+
+# Define max sequence lengths
+max_encoder_seq_length = max([len(txt) for txt in incorrect_sentences])
+max_decoder_seq_length = max([len(txt) for txt in correct_sentences])
+
+dataDict = {
+    "input_characters":input_characters,
+    "target_characters":target_characters,
+    "input_token_index":input_token_index,
+    "target_token_index":target_token_index,
+    "max_encoder_seq_length":max_encoder_seq_length,
+    "max_decoder_seq_length":max_decoder_seq_length,
+}
+
+file_path = "dataDict"
+with open(file_path, 'wb') as file:
+    pickle.dump(dataDict, file)
+
+# Create encoder and decoder data
+encoder_input_data = np.zeros((len(incorrect_sentences), max_encoder_seq_length, len(input_characters)), dtype='float32')
+decoder_input_data = np.zeros((len(incorrect_sentences), max_decoder_seq_length, len(target_characters)), dtype='float32')
+decoder_target_data = np.zeros((len(incorrect_sentences), max_decoder_seq_length, len(target_characters)), dtype='float32')
+
+for i, (input_text, target_text) in enumerate(zip(incorrect_sentences, correct_sentences)):
+    for t, char in enumerate(input_text):
+        encoder_input_data[i, t, input_token_index[char]] = 1.0
+    for t, char in enumerate(target_text):
+        decoder_input_data[i, t, target_token_index[char]] = 1.0
+        if t > 0:
+            decoder_target_data[i, t - 1, target_token_index[char]] = 1.0
+
+# Define Seq2Seq model
+latent_dim = 256  # dimensionality of the encoding space
+
+train_dataset = tf.data.Dataset.from_tensor_slices(
+    ({"encoder_inputs": encoder_input_data, "decoder_inputs": decoder_input_data}, decoder_target_data)
+).shuffle(len(encoder_input_data)).batch(batch_size).prefetch(tf.data.AUTOTUNE)
+
+val_size = int(validation_split * len(encoder_input_data))
+
+# Split the dataset into training and validation
+train_dataset = train_dataset.skip(val_size)
+val_dataset = train_dataset.take(val_size)
+
+# Encoder
+encoder_inputs = Input(shape=(None, len(input_characters)))
+encoder = LSTM(latent_dim, return_state=True)
+encoder_outputs, state_h, state_c = encoder(encoder_inputs)
+encoder_states = [state_h, state_c]
+
+# Decoder
+decoder_inputs = Input(shape=(None, len(target_characters)))
+decoder_lstm = LSTM(latent_dim, return_sequences=True, return_state=True)
+decoder_outputs, _, _ = decoder_lstm(decoder_inputs, initial_state=encoder_states)
+decoder_dense = Dense(len(target_characters), activation='softmax')
+decoder_outputs = decoder_dense(decoder_outputs)
+
+# Define the model
+model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
+
+# Compile the model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Train the model
+tqdm_callback = tfa.callbacks.TQDMProgressBar()
+# model.fit(train_dataset, epochs=epochs, validation_data=val_dataset,
+#           callbacks=[WandbMetricsLogger(log_freq=5),WandbModelCheckpoint("models"),tqdm_callback])
+          
+# with tf.device('/GPU:0'):
+model.fit([encoder_input_data, decoder_input_data], decoder_target_data, batch_size=batch_size, epochs=epochs, validation_split=validation_split,
+          callbacks=[WandbMetricsLogger(log_freq=5),WandbModelCheckpoint("models"),tqdm_callback])
+
+model.save("models/"+model_name)
+wandb.finish()

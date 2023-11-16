@@ -1,0 +1,10 @@
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+Training:   0%|                                                                                                           0/1 ETA: ?s,  ?epochs/sWARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+0/1                                                                                                                                    ETA: ?s -
+Epoch 1/1
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+1/1████████████████████████████████████████████████████████████████████████████████████████████████ ETA: 00:00s - loss: 1.2643 - accuracy: 0.4884
+
+1/1██████████████████████████████████████████████████████ ETA: 00:00s - loss: 1.2643 - accuracy: 0.4884 - val_loss: 1.9017 - val_accuracy: 0.0507
+Training: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████ 1/1 ETA: 00:00s,  26.45s/epochs

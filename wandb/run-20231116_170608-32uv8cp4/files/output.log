@@ -1,0 +1,8 @@
+
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\base.py", line 109, in <module>
+    model_checkpoint_callback = ModelCheckpoint(filepath=checkpoint_path, save_freq='epoch')
+                                ^^^^^^^^^^^^^^^
+NameError: name 'ModelCheckpoint' is not defined

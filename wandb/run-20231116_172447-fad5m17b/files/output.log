@@ -1,0 +1,287 @@
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+Training:   0%|                                                                                                          0/20 ETA: ?s,  ?epochs/s
+0/13                                                                                                                                   ETA: ?s -
+Epoch 1/20
+Epoch 1/20
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+ 1/13 [=>............................] - ETA: 3:25 - loss: 0.6937 - accuracy: 0.7492
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13 [==============================] - 134s 10s/step - loss: 0.7017 - accuracy: 0.0816 - val_loss: 0.6484 - val_accuracy: 0.0264
+Epoch 2/20
+Epoch 2/20
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.7017 - accuracy: 0.0816 - val_loss: 0.6484 - val_accuracy: 0.0264
+Training:   5%|████▊                                                                                            1/20 ETA: 42:38s,  134.65s/epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13 [==============================] - 134s 10s/step - loss: 0.6017 - accuracy: 0.0250 - val_loss: 0.6139 - val_accuracy: 0.0252
+Epoch 3/20
+Epoch 3/20
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.6017 - accuracy: 0.0250 - val_loss: 0.6139 - val_accuracy: 0.0252
+Training:  10%|█████████▌                                                                                       2/20 ETA: 40:17s,  134.29s/epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.5809 - accuracy: 0.0249 - val_loss: 0.6044 - val_accuracy: 0.0261
+Training:  15%|██████████████▍                                                                                  3/20 ETA: 40:11s,  141.83s/epochs
+13/13 [==============================] - 151s 12s/step - loss: 0.5809 - accuracy: 0.0249 - val_loss: 0.6044 - val_accuracy: 0.0261
+Epoch 4/20
+Epoch 4/20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13 [==============================] - 159s 12s/step - loss: 0.5810 - accuracy: 0.0251 - val_loss: 0.6075 - val_accuracy: 0.0262
+Epoch 5/20
+Epoch 5/20
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.5810 - accuracy: 0.0251 - val_loss: 0.6075 - val_accuracy: 0.0262
+Training:  20%|███████████████████▏                                                                             4/20 ETA: 39:38s,  148.66s/epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.5796 - accuracy: 0.0252 - val_loss: 0.6031 - val_accuracy: 0.0264
+Training:  25%|████████████████████████                                                                         5/20 ETA: 38:16s,  153.09s/epochs
+13/13 [==============================] - 161s 13s/step - loss: 0.5796 - accuracy: 0.0252 - val_loss: 0.6031 - val_accuracy: 0.0264
+Epoch 6/20
+Epoch 6/20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13 [==============================] - 192s 15s/step - loss: 0.5804 - accuracy: 0.0253 - val_loss: 0.6041 - val_accuracy: 0.0264
+Epoch 7/20
+Epoch 7/20
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.5804 - accuracy: 0.0253 - val_loss: 0.6041 - val_accuracy: 0.0264
+Training:  30%|████████████████████████████▊                                                                    6/20 ETA: 38:48s,  166.33s/epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.5792 - accuracy: 0.0253 - val_loss: 0.6048 - val_accuracy: 0.0264
+Training:  35%|█████████████████████████████████▌                                                               7/20 ETA: 35:16s,  162.81s/epochs
+13/13 [==============================] - 156s 12s/step - loss: 0.5792 - accuracy: 0.0253 - val_loss: 0.6048 - val_accuracy: 0.0264
+Epoch 8/20
+Epoch 8/20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13████████████████████████████████████████████████████ ETA: 00:00s - loss: 0.5798 - accuracy: 0.0253 - val_loss: 0.6072 - val_accuracy: 0.0266
+Training:  40%|██████████████████████████████████████▍                                                          8/20 ETA: 31:27s,  157.29s/epochs
+13/13 [==============================] - 145s 11s/step - loss: 0.5798 - accuracy: 0.0253 - val_loss: 0.6072 - val_accuracy: 0.0266
+Epoch 9/20
+Epoch 9/20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13 [==============================] - 86s 7s/step - loss: 0.5814 - accuracy: 0.0255 - val_loss: 0.6077 - val_accuracy: 0.0266
+Epoch 10/20
+Epoch 10/20
+13/13███ ETA: 00:00s - loss: 0.5814 - accuracy: 0.0255 - val_loss: 0.6077 - val_accuracy: 0.0266
+Training:  45%|█████████████████████▏                          9/20 ETA: 24:45s,  135.02s/epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13/13 [==============================] - 91s 7s/step - loss: 0.5815 - accuracy: 0.0255 - val_loss: 0.6077 - val_accuracy: 0.0266
+Epoch 11/20
+Epoch 11/20
+13/13███ ETA: 00:00s - loss: 0.5815 - accuracy: 0.0255 - val_loss: 0.6077 - val_accuracy: 0.0266
+Training:  50%|███████████████████████                        10/20 ETA: 20:13s,  121.38s/epochs
+
+
+
+
+
+

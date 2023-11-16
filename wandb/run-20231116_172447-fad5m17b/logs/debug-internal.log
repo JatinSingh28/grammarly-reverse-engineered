@@ -1,0 +1,5 @@
+2023-11-16 17:24:47,502 INFO    StreamThr :23468 [internal.py:wandb_internal():86] W&B internal server running at pid: 23468, started at: 2023-11-16 17:24:47.500665
+2023-11-16 17:24:47,514 DEBUG   HandlerThread:23468 [handler.py:handle_request():146] handle_request: status
+2023-11-16 17:24:47,520 INFO    WriterThread:23468 [datastore.py:open_for_write():85] open: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231116_172447-fad5m17b\run-fad5m17b.wandb
+2023-11-16 17:24:47,520 DEBUG   SenderThread:23468 [sender.py:send():380] send: header
+2023-11-16 17:24:47,520 DEBUG   SenderThread:23468 [sender.py:send():380] send: run
