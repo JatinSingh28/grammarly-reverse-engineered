@@ -1,0 +1,10 @@
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+Training:   0%|                                                         0/1 ETA: ?s,  ?epochs/s
+0/1                                                                                  ETA: ?s -
+Epoch 1/1
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+1/1██████████████████████████████████████████████ ETA: 00:00s - loss: 1.2656 - accuracy: 0.4880
+1/1████ ETA: 00:00s - loss: 1.2656 - accuracy: 0.4880 - val_loss: 1.9035 - val_accuracy: 0.0732
+
+1/1 [==============================] - 27s 27s/step - loss: 1.2656 - accuracy: 0.4880 - val_loss: 1.9035 - val_accuracy: 0.0732

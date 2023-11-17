@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\baseTorch.py", line 172, in <module>
+    output = model(encoder_input, decoder_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\baseTorch.py", line 137, in forward
+    encoder_outputs, (encoder_hidden, encoder_cell) = self.encoder(encoder_input)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\baseTorch.py", line 110, in forward
+    outputs, (hidden, cell) = self.lstm(embedded)
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\rnn.py", line 845, in forward
+    raise ValueError(f"LSTM: Expected input to be 2D or 3D, got {input.dim()}D instead")
+ValueError: LSTM: Expected input to be 2D or 3D, got 4D instead

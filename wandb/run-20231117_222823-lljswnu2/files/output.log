@@ -1,0 +1,10 @@
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\seq2seqRNN.py", line 118, in <module>
+    model.fit(train_dataset, epochs=epochs, validation_data=val_dataset,
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\data_adapter.py", line 1319, in __init__
+    raise ValueError("Expected input data to be non-empty.")
+ValueError: Expected input data to be non-empty.

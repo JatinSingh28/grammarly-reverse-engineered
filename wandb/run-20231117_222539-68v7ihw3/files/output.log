@@ -1,0 +1,6 @@
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\seq2seqRNN.py", line 55, in <module>
+    encoder_outputs, state_h, state_c = encoder(encoder_inputs)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)

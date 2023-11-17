@@ -7,13 +7,13 @@ import tensorflow_addons as tfa
 import wandb
 from wandb.keras import WandbMetricsLogger, WandbModelCheckpoint
 import pickle
+from dataPreprocessor import n_rows, input_characters, target_characters, encoder_input_data, decoder_input_data, decoder_target_data
 
 #configrations
-epochs = 20
+epochs = 1
 batch_size = 64
 validation_split = 0.2
-model_name = "baseModelV1"
-n_rows=1000
+model_name = "seq2seqLSTM"
 
 wandb.init(
     # set the wandb project where this run will be logged
@@ -37,74 +37,18 @@ wandb.init(
 
 config = wandb.config
 
-# Example dataset with incorrect and correct sentences
-df = pd.read_csv("./data/data1.csv",nrows=n_rows)
-
-incorrect_sentences = df['input']
-correct_sentences = df['target']
-# incorrect_sentences = [
-#     'She is go too school.',
-#     'He hav a red car.',
-#     'I am alwayz happy.'
-# ]
-# correct_sentences = [
-#     'She goes to school.',
-#     'He has a red car.',
-#     'I am always happy.'
-# ]
-
-
-
-# Generate vocabulary sets
-input_characters = set(' '.join(incorrect_sentences + correct_sentences))
-target_characters = input_characters
-
-# Generate character-level index mappings
-input_token_index = dict([(char, i) for i, char in enumerate(input_characters)])
-target_token_index = input_token_index
-
-# Define max sequence lengths
-max_encoder_seq_length = max([len(txt) for txt in incorrect_sentences])
-max_decoder_seq_length = max([len(txt) for txt in correct_sentences])
-
-dataDict = {
-    "input_characters":input_characters,
-    "target_characters":target_characters,
-    "input_token_index":input_token_index,
-    "target_token_index":target_token_index,
-    "max_encoder_seq_length":max_encoder_seq_length,
-    "max_decoder_seq_length":max_decoder_seq_length,
-}
-
-file_path = "dataDict"
-with open(file_path, 'wb') as file:
-    pickle.dump(dataDict, file)
-
-# Create encoder and decoder data
-encoder_input_data = np.zeros((len(incorrect_sentences), max_encoder_seq_length, len(input_characters)), dtype='float32')
-decoder_input_data = np.zeros((len(incorrect_sentences), max_decoder_seq_length, len(target_characters)), dtype='float32')
-decoder_target_data = np.zeros((len(incorrect_sentences), max_decoder_seq_length, len(target_characters)), dtype='float32')
-
-for i, (input_text, target_text) in enumerate(zip(incorrect_sentences, correct_sentences)):
-    for t, char in enumerate(input_text):
-        encoder_input_data[i, t, input_token_index[char]] = 1.0
-    for t, char in enumerate(target_text):
-        decoder_input_data[i, t, target_token_index[char]] = 1.0
-        if t > 0:
-            decoder_target_data[i, t - 1, target_token_index[char]] = 1.0
-
 # Define Seq2Seq model
 latent_dim = 256  # dimensionality of the encoding space
 
-train_dataset = tf.data.Dataset.from_tensor_slices(
-    ({"encoder_inputs": encoder_input_data, "decoder_inputs": decoder_input_data}, decoder_target_data)
-).shuffle(len(encoder_input_data)).batch(batch_size).prefetch(tf.data.AUTOTUNE)
+# train_dataset = tf.data.Dataset.from_tensor_slices(
+#     ({"encoder_inputs": encoder_input_data, "decoder_inputs": decoder_input_data}, decoder_target_data)
+# ).shuffle(len(encoder_input_data)).batch(batch_size).prefetch(tf.data.AUTOTUNE)
 
-val_size = int(validation_split * len(encoder_input_data))
+# val_size = int(validation_split * len(encoder_input_data))
 
-# Split the dataset into training and validation
-train_dataset = train_dataset.skip(val_size)
-val_dataset = train_dataset.take(val_size)
+# # Split the dataset into training and validation
+# train_dataset = train_dataset.skip(val_size)
+# val_dataset = train_dataset.take(val_size)
 
 # Encoder
 encoder_inputs = Input(shape=(None, len(input_characters)))

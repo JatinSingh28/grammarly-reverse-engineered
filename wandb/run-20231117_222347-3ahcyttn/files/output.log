@@ -1,0 +1,8 @@
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\seq2seqRNN.py", line 54, in <module>
+    encoder = RNN(latent_dim, return_state=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\layers\rnn\base_rnn.py", line 247, in __init__
+    raise ValueError(
+ValueError: Argument `cell` should have a `call` method. The RNN was passed: cell=256

@@ -1,0 +1,360 @@
+2023-11-17 22:31:05,644 INFO    StreamThr :17480 [internal.py:wandb_internal():86] W&B internal server running at pid: 17480, started at: 2023-11-17 22:31:05.644113
+2023-11-17 22:31:05,647 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status
+2023-11-17 22:31:05,647 INFO    WriterThread:17480 [datastore.py:open_for_write():85] open: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\run-02qbk3kp.wandb
+2023-11-17 22:31:05,647 DEBUG   SenderThread:17480 [sender.py:send():380] send: header
+2023-11-17 22:31:05,758 DEBUG   SenderThread:17480 [sender.py:send():380] send: run
+2023-11-17 22:31:07,419 INFO    SenderThread:17480 [dir_watcher.py:__init__():211] watching files in: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files
+2023-11-17 22:31:07,430 INFO    SenderThread:17480 [sender.py:_start_run_threads():1124] run started: 02qbk3kp with start time 1700240465.645119
+2023-11-17 22:31:07,431 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: check_version
+2023-11-17 22:31:07,431 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: check_version
+2023-11-17 22:31:08,936 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: run_start
+2023-11-17 22:31:10,584 DEBUG   HandlerThread:17480 [system_info.py:__init__():32] System info init
+2023-11-17 22:31:10,584 DEBUG   HandlerThread:17480 [system_info.py:__init__():47] System info init done
+2023-11-17 22:31:10,584 INFO    HandlerThread:17480 [system_monitor.py:start():194] Starting system monitor
+2023-11-17 22:31:10,584 INFO    SystemMonitor:17480 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-17 22:31:10,584 INFO    HandlerThread:17480 [system_monitor.py:probe():214] Collecting system info
+2023-11-17 22:31:10,584 INFO    SystemMonitor:17480 [interfaces.py:start():190] Started cpu monitoring
+2023-11-17 22:31:10,584 INFO    SystemMonitor:17480 [interfaces.py:start():190] Started disk monitoring
+2023-11-17 22:31:10,584 INFO    SystemMonitor:17480 [interfaces.py:start():190] Started gpu monitoring
+2023-11-17 22:31:10,599 INFO    SystemMonitor:17480 [interfaces.py:start():190] Started memory monitoring
+2023-11-17 22:31:10,615 DEBUG   HandlerThread:17480 [system_info.py:probe():196] Probing system
+2023-11-17 22:31:10,615 INFO    SystemMonitor:17480 [interfaces.py:start():190] Started network monitoring
+2023-11-17 22:31:10,615 DEBUG   HandlerThread:17480 [system_info.py:_probe_git():181] Probing git
+2023-11-17 22:31:10,813 DEBUG   HandlerThread:17480 [system_info.py:_probe_git():189] Probing git done
+2023-11-17 22:31:10,813 DEBUG   HandlerThread:17480 [system_info.py:probe():244] Probing system done
+2023-11-17 22:31:10,813 DEBUG   HandlerThread:17480 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.11.5', 'heartbeatAt': '2023-11-17T17:01:10.615588', 'startedAt': '2023-11-17T17:01:05.625046', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\sagoi\\OneDrive\\Desktop\\Grammarly\\seq2seqRNN.py', 'codePathLocal': 'seq2seqRNN.py', 'codePath': 'seq2seqRNN.py', 'git': {'remote': 'https://github.com/JatinSingh28/grammarly-reverse-engineered.git', 'commit': 'cb8308d6f4172a575e362ee38bb898c4527c4025'}, 'email': 'sagoisinghjatin9951@gmail.com', 'root': 'C:/Users/sagoi/OneDrive/Desktop/Grammarly', 'host': 'Asus', 'username': 'sagoi', 'executable': 'C:\\Users\\sagoi\\OneDrive\\Desktop\\Grammarly\\venv\\Scripts\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2600.0, 'min': 0.0, 'max': 2600.0}, 'cpu_freq_per_core': [{'current': 2600.0, 'min': 0.0, 'max': 2600.0}], 'disk': {'/': {'total': 375.4368324279785, 'used': 184.7111358642578}}, 'gpu': 'NVIDIA GeForce RTX 2050', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2050', 'memory_total': 4294967296}], 'memory': {'total': 15.677627563476562}}
+2023-11-17 22:31:10,813 INFO    HandlerThread:17480 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-17 22:31:10,813 INFO    HandlerThread:17480 [system_monitor.py:probe():227] Publishing system info
+2023-11-17 22:31:10,813 DEBUG   HandlerThread:17480 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-17 22:31:10,813 DEBUG   HandlerThread:17480 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-17 22:31:10,813 INFO    HandlerThread:17480 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-17 22:31:10,820 DEBUG   SenderThread:17480 [sender.py:send():380] send: files
+2023-11-17 22:31:10,820 INFO    SenderThread:17480 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-17 22:31:10,820 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 22:31:10,827 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 22:31:10,827 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 22:31:10,827 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 22:31:11,464 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-metadata.json
+2023-11-17 22:31:11,464 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\requirements.txt
+2023-11-17 22:31:12,639 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:12,639 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:12,765 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 22:31:13,098 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 22:31:13,098 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:13,098 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:15,041 DEBUG   SenderThread:17480 [sender.py:send():380] send: telemetry
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: telemetry
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: metric
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: telemetry
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: metric
+2023-11-17 22:31:15,045 WARNING SenderThread:17480 [sender.py:send_metric():1331] Seen metric with glob (shouldn't happen)
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: telemetry
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: metric
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: metric
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: metric
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: history
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 22:31:15,045 INFO    SenderThread:17480 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: history
+2023-11-17 22:31:15,045 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 22:31:15,045 INFO    SenderThread:17480 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 22:31:15,128 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:15,128 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:15,476 INFO    wandb-upload_0:17480 [upload_job.py:push():131] Uploaded file C:\Users\sagoi\AppData\Local\Temp\tmptb3lpswfwandb\5v23bem4-wandb-metadata.json
+2023-11-17 22:31:15,506 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\output.log
+2023-11-17 22:31:15,506 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-summary.json
+2023-11-17 22:31:15,602 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:15,613 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:16,061 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 22:31:16,181 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-17 22:31:16,181 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: log_artifact
+2023-11-17 22:31:17,526 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\output.log
+2023-11-17 22:31:17,620 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:17,620 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:18,088 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:18,088 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:18,714 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:31:20,103 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:20,103 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:20,580 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:20,587 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:22,592 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:22,592 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:23,053 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:23,069 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:23,783 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:25,086 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:25,086 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:25,550 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:25,565 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:27,579 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:27,579 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:28,057 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:28,057 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:28,814 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:30,080 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:30,081 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:30,545 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:30,545 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:31,978 ERROR   wandb-upload_14:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/b5049280174314a5cadc24f5ce3cb6ba?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=LHB51qpOeq%2Fd2PNaPGVR07K%2FgRrqowKOpTM8MZ1GkOtieyrIZ2rOf5HQAWuvUw0uqTQfRll9h%2BCa9rycRrabaCeUuR4zKau1S5NAtbKcoOKotgr1bgLLaO9eSApOKKDWC2SoPaLhr5xsBt3QKoJtJ%2FrwkKUhs%2FQLNPPUfDOcwLSYckfTCOzmlZ7JDjqyZp7nBLP5RvUo5H%2Bk2d%2Fn39vOTQy1awsLH1piSc1QbGgKavKu69qyB6ZeJh8rqkQhnECrFrBWOxILbN0qzKu%2FULXhIK28HONqkkEb7%2BVjE32eXb10vpSMsrTf%2FAMfH5ZzgKK5fzwIiR3KBa8fIWwQXlFqoA%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:31,978 ERROR   wandb-upload_14:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'tQSSgBdDFKXK3CT1zjy2ug==', 'Content-Length': '1900'}
+2023-11-17 22:31:31,978 ERROR   wandb-upload_14:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:32,040 ERROR   wandb-upload_0:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/e13e28992015e7e0212cabd0875cd87a?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=qkndeQpQ3C1IkesiMPAwAxDr1ImvaGgUgTuAgn1CRJFGEGG5lzOj1cqK5gflRhKAbqA%2FlgR2SUW6aiDyyUFaVKbFXg%2FQiosLgGOFARjVGgXg1g8%2F5jghgtisIT2Q8lkvfSv7QLCl%2BmzlrDJIllwK%2BCWZ%2FkJCiqElBHK%2BqjyWB97qDiGkIsSMxxkuIhdfxpq3UNUIzNfD1CrKZqtovAZIz1AetWx6R%2FdclfhMP7RtfHD43EErUhvMawgiFFnNFzfik5UO1ilKTI7AME%2BzEY5ePol54XA7HPFUpsnsmfapJqnCXhXm9R%2B06w5Xt31CvpgyRel0nkZR4DjFFjxGUwBrsg%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:32,040 ERROR   wandb-upload_0:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': '4T4omSAV5+AhLKvQh1zYeg==', 'Content-Type': 'application/protobuf', 'Content-Length': '56'}
+2023-11-17 22:31:32,040 ERROR   wandb-upload_0:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:32,065 ERROR   wandb-upload_11:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/3f37c6b352e7d40cd1fd2977a22a9f69?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=R%2BVK%2B1jKlSDKEtM3r4UdOtsH9n89Dsz5OQRu6wpVXrDDNfaw4TS1cSWD87T7ZRZn1TCOQTZ%2BYrED7wv8kfF1QYnLgI%2BdCv0nSC8MexeoKrZZ%2BgSDqKW86UZsdCQX5mFkSW1mqzxJSMDAPo9GF8MM%2BTd501sZCjlKixOKGZYWCoUFDz%2FvplxmGeQI3RBidrrAJPgLGzSWcNSAtpPWmHVwJRFwy6h%2BEUbn9cYrpw7mDfrRDqCTrhhekWheGsw7rey9SNz8MxfzAAeY2g3eSRqTgkebN0h3GZaNB7WSoph7RLGpJizYtKt1UcSS7vbuRi1ayfBXFqxMfaqLEp8p9gpBvg%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:32,065 ERROR   wandb-upload_11:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'PzfGs1Ln1AzR/Sl3oiqfaQ==', 'Content-Type': 'application/protobuf', 'Content-Length': '15810'}
+2023-11-17 22:31:32,066 ERROR   wandb-upload_11:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:32,557 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:32,557 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:33,049 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:33,057 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:33,768 ERROR   wandb-upload_9:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/39440a9868956074b267d1a9cbd08a17?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=e2Q4SuD25uT8RorGaQRyozbUSCyc9ZApDpQ1%2BS7HPa6Wz05aXrJn4k9N5IKBnxdOpEKLqNzmZ%2Fgy1P8qJEDXwyJHL1HFhFmxgQhlXCCDef9U%2FKYqkxmr%2BXquryBjR3lxk0V2YYL1MZpEp4XdYkNHu8skmaFRkEguLUGpP23n23cbWsXlQ5liujnl%2F%2B6xfyelKy%2Fa2bBoEZiiWtWtogP8C0CC2HjG%2BXmy5Y1CDwLORe0wQt7feDn3fiMi8qRerb%2FGAj8yscATCv81uUi81o%2Bs2SFsoWu41C8iRxXp44nNxpuMJOU1yLA30szG0ez1hPX4uWH7f7c1n48lRRubghRjtA%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:33,768 ERROR   wandb-upload_9:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'OUQKmGiVYHSyZ9Gpy9CKFw==', 'Content-Length': '1917'}
+2023-11-17 22:31:33,770 ERROR   wandb-upload_9:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:33,779 ERROR   wandb-upload_6:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/3fbd435f9946ed386f0811f5805a1a61?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=EibjgNrl0vWzjVOquzfnxQ2T5JGPuQY5WSGaFfFdnF4c0NK3dol2ujs%2B7XqmBnvtFB6rhYmEQI8o7aMtU5Lc2Jlpo1h7v8PrEALi5Dji2lWxIJ%2By8wDa1BUvI9An5kXxgVpc246mKxw0iSqEycjj9q0XxGz8lwPaWsHh0P3S7NAHgotUVnN3FAPdXd6kIY%2F71HM7orumaV1LBcdEJN4xlAdlYmHQVIA4qp96LPDckzN1oHjSj0t9RroXzqzXPJq4bTJw%2B8zKC627nXpVivwR3BmaCPNpcFcmvRmOzu4pW6nd06jTWJuqpDK948U9qShbSvE6Oy5be1qaLa1KRw%2BGJQ%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:33,779 ERROR   wandb-upload_6:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'P71DX5lG7ThvCBH1gFoaYQ==', 'Content-Type': 'application/protobuf', 'Content-Length': '16407'}
+2023-11-17 22:31:33,779 ERROR   wandb-upload_6:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:33,784 ERROR   wandb-upload_4:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/781a433d3ea321f3e48436620edfa16c?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=f7j5f4Wz%2FeFaz%2BA2AuzUSK4RMR1nETXH%2FYYF6%2B6i3wZRUmtpE%2Bqfe77Q4QPqek0laHvAxmi53rBZDuFFSftFpucveA1EzSMynRFLnTlzPbvf2Zcs9%2BHi45SbhrkmdGoBz9UEJcqftmRMnXIZqHG1zgBsmzV0oFLEn61mIFnZonR%2FZBfuU54jiC5qIQMZ%2FMyIFc3P5Ih%2FQIosSImca8JJ8mNYVM1l6%2BhxmOO55XfrHaMnQ4LD%2Fahl9oIsYm7Up4%2FMkoh93fUChLkmdPkzXSl9fcI5%2FnNoGii6jy57z3ol%2FzcxmfftY%2FyVNtCaowIEk%2BDOjtoZmbdQ6CUH2b56gX%2Bnlg%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:33,784 ERROR   wandb-upload_4:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'eBpDPT6jIfPkhDZiDt+hbA==', 'Content-Length': '1917'}
+2023-11-17 22:31:33,784 ERROR   wandb-upload_4:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:33,848 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:33,862 ERROR   wandb-upload_1:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/3f893a42f50383347acd219cbb144231?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Fr3Rk1g2mKSW5aUNvnDk2hCuq%2BbN9UTvXrtLJMsACxLK46va4wG1KF9D89e814YZzs%2BCQ0DnW9Z1gmTZ926VYqpl4zE6UY7W4BeTxVSEYkgd7ZpO9Bu%2BkTuynd7wZmzkRGNkW6vSxWnaje941yxmJzWnYZzKI4wvrXpu1EzgFXLHvvZsj5WQ9YeQxriyrvNFCKRqRt3A1gyAIKpCpGyI%2FHStw62QtooBm9Qxe4%2F0fNIsDIeChXawNSvszOEWRzZeQlWeWc10mZLyw%2Fx4h8e4B6%2BY6tBQwdHV5TjIl0be9LYyjiaYLOI7ReiqmPxK1IYxBXN8KijW0uYUHdLIouol2g%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:33,862 ERROR   wandb-upload_1:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'P4k6QvUDgzR6zSGcuxRCMQ==', 'Content-Type': 'application/protobuf', 'Content-Length': '16407'}
+2023-11-17 22:31:33,862 ERROR   wandb-upload_1:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:34,312 ERROR   wandb-upload_10:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/3addfa429e0844aa9d528838819583c0?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=aLLFaIBB3SeUsu2PjvWU3wt7%2FIgBwcqJaXFN4SEPw8qSyIl2UiHl38mSdITcF8mn9xkozkL5%2FtcYvpMG8iRWlfWDRsQ4MLla%2BNMW0CsqRaZk6Cnjp%2BEriCMHd1j8c3yoiiAST5oC7IaYTm0xOPbINIdb0LZrrUStyz%2B5d48naPjecegtyoJDYD3kc3S4FC1F5ytOkP26n2nr5MiHGb2nLmImQxDbnpCsVgWiSE0QlLzHX3NeazPE0liJTcMXjdif0tGLEOc26uhneeu5Tll8tbImV9ZvwpVVZI3F3mmvuuEeWBl8EhiVtb%2BKZtVaShXOpWG4EZ3i8cmWKBsZ3fP7fA%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:34,312 ERROR   wandb-upload_10:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'Ot36Qp4IRKqdUog4gZWDwA==', 'Content-Type': 'application/protobuf', 'Content-Length': '57'}
+2023-11-17 22:31:34,312 ERROR   wandb-upload_10:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:35,069 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:35,069 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:35,549 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:35,566 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:37,578 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:37,579 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:37,751 ERROR   wandb-upload_5:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/59abf9257d173d8b48d0267c2622c9cf?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=o32iPNRH20uf29sf4eY%2FiKXS9PN0Q1%2ByrxYVcXrRy1Q4gCceUwvN4IbxQPqUs%2BRz%2FJMMGZVhcTcyqpMRlnoZMP9l1Edd4UtXUgGgveoX3W%2BUJggiDlhlQieOB45SqTe9T3lRvIGPssGPnzj2fTXeioz%2BHDQ6jiV1QtX3ymEIh2vTrMpu1ait3N8skWZIQPDh4alT8jIaIoGxJMHSZOhbdBxKNvQtnhaUu7QZ4YcJBR66Ah6H4l%2BWSQwIm9t1cedlDRURQt0AtHCDZQ%2FDDVaoV80JfgC4I%2FF4kQabNizSrjFvFOellkJB1gVOKx57syI%2FjnUny3LwsQY7C2cOfwVY9w%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-11-17 22:31:37,751 ERROR   wandb-upload_5:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'Wav5JX0XPYtI0CZ8JiLJzw==', 'Content-Type': 'application/protobuf', 'Content-Length': '58'}
+2023-11-17 22:31:37,751 ERROR   wandb-upload_5:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:37,751 ERROR   wandb-upload_8:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/34895c7435bfe3deb7ce7f4a77b2bafc?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=NQVITc5B7uJqNycaXm%2Bz9u5RdcUivljMO7HCUreJGiIkgREIAUQYPylOI%2Bkx9qG93YrqfR%2FlbjcZeGgc5RWMia1xDVC4TzFOib2xe9RX4KsUeBBUNCYcfig89jYOWgmgKCELyERCQVY95D8AkhudOtN589j06MH5kPF08GH0bJ7pnHUaVoM0XZok8RBzhjRj%2Boiq4J%2FonpopRz8ne9l593nUtkY4rv3iaOcAW1BLtS4MPu8cQkqL682a%2Bumdg5i4aY9sgk%2B5niQJCK0RdyaAgeG4403OCHROlxP%2FZbYNho6gPvb1rEQ7ow%2FAgCG0eUBZKMgqlXZOU0ZbdZ5HwItQSA%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/116716402/641678647/34895c7435bfe3deb7ce7f4a77b2bafc?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=NQVITc5B7uJqNycaXm%2Bz9u5RdcUivljMO7HCUreJGiIkgREIAUQYPylOI%2Bkx9qG93YrqfR%2FlbjcZeGgc5RWMia1xDVC4TzFOib2xe9RX4KsUeBBUNCYcfig89jYOWgmgKCELyERCQVY95D8AkhudOtN589j06MH5kPF08GH0bJ7pnHUaVoM0XZok8RBzhjRj%2Boiq4J%2FonpopRz8ne9l593nUtkY4rv3iaOcAW1BLtS4MPu8cQkqL682a%2Bumdg5i4aY9sgk%2B5niQJCK0RdyaAgeG4403OCHROlxP%2FZbYNho6gPvb1rEQ7ow%2FAgCG0eUBZKMgqlXZOU0ZbdZ5HwItQSA%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+2023-11-17 22:31:37,751 ERROR   wandb-upload_8:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'NIlcdDW/4963zn9Kd7K6/A==', 'Content-Length': '7983442'}
+2023-11-17 22:31:37,751 ERROR   wandb-upload_8:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:37,873 ERROR   wandb-upload_7:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/6adeded9bf1b78c075886ba379212bc4?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Zu21yzjjldkP%2F2xqj%2FjWkTQE1tIX0dN%2FMImLdMuxWrPHTuknkXvsm3PZecypwvwW9%2FydMOoztqIc78UF0RHh8MqcU0%2FkiPZA11VAZv%2Bi1SOzPgedyY%2FONLnpMSPoeQxc3WYYinr7UpSNWoJWghKDH5CvZSwNf7I%2Bjge8GbZwc21OONHPaAeEOrttNliitLxlnykfzGDazLAzshpEdD4CP%2Brw6%2B9C%2BGg2PRJlvXrxWRjR7wAi8f160VtE8EwUWXHA9h6INla728KqkkvTJof9XFc%2BFnJdThQwOFN1VDi7y9cHrRCDcImBVaBblYh8cEvLygN%2BBmCrrVLSaFYrqwaw8g%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/116716402/641678647/6adeded9bf1b78c075886ba379212bc4?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Zu21yzjjldkP%2F2xqj%2FjWkTQE1tIX0dN%2FMImLdMuxWrPHTuknkXvsm3PZecypwvwW9%2FydMOoztqIc78UF0RHh8MqcU0%2FkiPZA11VAZv%2Bi1SOzPgedyY%2FONLnpMSPoeQxc3WYYinr7UpSNWoJWghKDH5CvZSwNf7I%2Bjge8GbZwc21OONHPaAeEOrttNliitLxlnykfzGDazLAzshpEdD4CP%2Brw6%2B9C%2BGg2PRJlvXrxWRjR7wAi8f160VtE8EwUWXHA9h6INla728KqkkvTJof9XFc%2BFnJdThQwOFN1VDi7y9cHrRCDcImBVaBblYh8cEvLygN%2BBmCrrVLSaFYrqwaw8g%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+2023-11-17 22:31:37,873 ERROR   wandb-upload_7:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'at7e2b8beMB1iGujeSErxA==', 'Content-Type': 'application/protobuf', 'Content-Length': '1262731'}
+2023-11-17 22:31:37,873 ERROR   wandb-upload_7:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:37,873 ERROR   wandb-upload_13:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/b2f9b60d705e659da377cdbb8df2cbe2?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=H8u05L5xOGlD43eD0LQehCeXK7QSEAMoOAT204daMF519zrPZUcqQFw72okZe6b%2FBfrGFxnTO419bKF%2BxaNyEwhK%2FShSFCNJkxvkkiaAa25s0ic3FVn8w%2Bsl0YOVxBR0VW9cx2T%2FE6%2BMY9OkJ0ALkcdCsnquwanRqYdJ3%2BNFaTZSmOvnrfWRgUvomGrBG8L7TPz0Otv4HkbSuZH%2BdnPFgHWMZn6tMy2Mqfoawj7vTeBFH5WQgDw%2F8M359Xpi9I18yerdIarorniPAayChZ5RMuhEtQOTBZwApNlDuRAs1LJrByv2y7p3rUaNKgsLuwwzwFc39JUzkGym0RSEcvBGfg%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/116716402/641678647/b2f9b60d705e659da377cdbb8df2cbe2?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=H8u05L5xOGlD43eD0LQehCeXK7QSEAMoOAT204daMF519zrPZUcqQFw72okZe6b%2FBfrGFxnTO419bKF%2BxaNyEwhK%2FShSFCNJkxvkkiaAa25s0ic3FVn8w%2Bsl0YOVxBR0VW9cx2T%2FE6%2BMY9OkJ0ALkcdCsnquwanRqYdJ3%2BNFaTZSmOvnrfWRgUvomGrBG8L7TPz0Otv4HkbSuZH%2BdnPFgHWMZn6tMy2Mqfoawj7vTeBFH5WQgDw%2F8M359Xpi9I18yerdIarorniPAayChZ5RMuhEtQOTBZwApNlDuRAs1LJrByv2y7p3rUaNKgsLuwwzwFc39JUzkGym0RSEcvBGfg%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+2023-11-17 22:31:37,873 ERROR   wandb-upload_13:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'svm2DXBeZZ2jd827jfLL4g==', 'Content-Length': '2140757'}
+2023-11-17 22:31:37,873 ERROR   wandb-upload_13:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:37,873 ERROR   wandb-upload_2:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/df5fcc81f39c2a848e1f28b344d783d7?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=HR30VTsDDrcln%2BunyJv8KftFLKWwGsfLJojpKRECwfMRZZnnhX6f2Y7wYyI49tjdIBUvfENcnoIoml09WVDRRNwURK73%2FhTeihC8OfZhIdWkOkPAg%2FyfGbzBfGf9WIdMDy6MJM1eBGLpegWiW8dkI%2BCqFJMVRzFob3C2x7ObuKkE1m%2F0LGhOgjxhgY%2FxyGxRAqdwXc1gpKJNi%2BpR0eeP8s35aW6jbpEWMfuistry3BkJYy34GUcnqi3HN%2BvefAJ%2BXpMc%2FqfIV9j7TtnJioZ2vcnfxXbf5z9AJIP0vqXa2ormnPOaeDUo64tZ3MVLYGeNFAlq3wM%2F%2BVmqzD2yVOQVCA%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/116716402/641678647/df5fcc81f39c2a848e1f28b344d783d7?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=HR30VTsDDrcln%2BunyJv8KftFLKWwGsfLJojpKRECwfMRZZnnhX6f2Y7wYyI49tjdIBUvfENcnoIoml09WVDRRNwURK73%2FhTeihC8OfZhIdWkOkPAg%2FyfGbzBfGf9WIdMDy6MJM1eBGLpegWiW8dkI%2BCqFJMVRzFob3C2x7ObuKkE1m%2F0LGhOgjxhgY%2FxyGxRAqdwXc1gpKJNi%2BpR0eeP8s35aW6jbpEWMfuistry3BkJYy34GUcnqi3HN%2BvefAJ%2BXpMc%2FqfIV9j7TtnJioZ2vcnfxXbf5z9AJIP0vqXa2ormnPOaeDUo64tZ3MVLYGeNFAlq3wM%2F%2BVmqzD2yVOQVCA%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+2023-11-17 22:31:37,873 ERROR   wandb-upload_12:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/478bf1fc7a9db2d644df446fa40156b2?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=D%2BUitxzyB5P5kV15KQ32mhlU%2BMANIr5J8D%2BiWWg6xuNlc5kRGojDHvt6WMbD4FjlGCUUe3ZbvpP4UJK3XCd5Zjvtt6SUDG73dNHSX88P1hvLwvSE6TYi%2B6%2FCBCfTHZ2SS2HFIwaf%2BE0JkctBYP1%2FE0RfssErl64K1gZWwcW18sUs2ARx09K0BVkKv%2FUq3H%2Bm%2BrXM0cjQ3XJAJnhXSOM8BMMhHncmxjpyvjUeY5xPCuuAPokQdPNTkD29O7ZvdxSLlmCtI6wenckscL0n282XNSOKEvAvNErJ9jHoZFGwcK42FnhMMTwgT5izYscDOm%2Bh%2FdgOQ5OSK7FxICLNTOW0hg%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/116716402/641678647/478bf1fc7a9db2d644df446fa40156b2?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=D%2BUitxzyB5P5kV15KQ32mhlU%2BMANIr5J8D%2BiWWg6xuNlc5kRGojDHvt6WMbD4FjlGCUUe3ZbvpP4UJK3XCd5Zjvtt6SUDG73dNHSX88P1hvLwvSE6TYi%2B6%2FCBCfTHZ2SS2HFIwaf%2BE0JkctBYP1%2FE0RfssErl64K1gZWwcW18sUs2ARx09K0BVkKv%2FUq3H%2Bm%2BrXM0cjQ3XJAJnhXSOM8BMMhHncmxjpyvjUeY5xPCuuAPokQdPNTkD29O7ZvdxSLlmCtI6wenckscL0n282XNSOKEvAvNErJ9jHoZFGwcK42FnhMMTwgT5izYscDOm%2Bh%2FdgOQ5OSK7FxICLNTOW0hg%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+2023-11-17 22:31:37,873 ERROR   wandb-upload_2:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': '31/MgfOcKoSOHyizRNeD1w==', 'Content-Type': 'application/protobuf', 'Content-Length': '1263019'}
+2023-11-17 22:31:37,873 ERROR   wandb-upload_12:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'R4vx/HqdstZE30RvpAFWsg==', 'Content-Type': 'application/protobuf', 'Content-Length': '431216'}
+2023-11-17 22:31:37,873 ERROR   wandb-upload_12:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:37,873 ERROR   wandb-upload_2:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:38,062 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:38,073 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:38,864 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:39,618 INFO    wandb-upload_0:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp_ua7pmlo
+2023-11-17 22:31:39,627 INFO    wandb-upload_10:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpqwqb0z1p
+2023-11-17 22:31:39,627 INFO    wandb-upload_4:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpt_3wtnvt
+2023-11-17 22:31:39,817 INFO    wandb-upload_9:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmplpao51q_
+2023-11-17 22:31:39,821 INFO    wandb-upload_14:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpfcn8xka6
+2023-11-17 22:31:40,023 INFO    wandb-upload_1:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp5x1qspkc
+2023-11-17 22:31:40,024 INFO    wandb-upload_6:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp1yebpidj
+2023-11-17 22:31:40,082 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:40,082 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:40,306 INFO    wandb-upload_11:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpsu44mc_b
+2023-11-17 22:31:40,542 INFO    wandb-upload_5:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp86yyxtd_
+2023-11-17 22:31:40,558 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:40,558 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:41,275 ERROR   wandb-upload_3:17480 [internal_api.py:upload_file():2557] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/116716402/641678647/767bb6038e7d3a2213bedde6de18b43a?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=HXHzRwBp%2BFrInQAF1F9fKILBZOXoMTAWI7jx9UXmstrtIyH2ul3uh5UxSDeZ1PEOve2xUjWhhMEfeqMEJ3icwTBBghn748T4X35B0nlgWyNjesu1dwDVmcFfoQj5E%2FYZT5aYaQSGLaLv%2BgLuvuXOu%2F5gbH8Qdr%2B7wVfo4Jk29%2FoIoBmj7sWogOhRIkNIDS1i%2BCDG4PWyXfSXy7Vbgwcyy9iFH7Lnp5oLwLCsZXYz5%2BAgB6tBLPeSyJYETu4ExBdWuRN7wpxYiDpE1YHc4P4qKBNp7RwZmEMcchZcvDlmKu3nN1Qrf9e3zSP2OSoqMs%2FHAqqJgMIX%2FEPba3ciKhsykg%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/116716402/641678647/767bb6038e7d3a2213bedde6de18b43a?Expires=1700326878&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=HXHzRwBp%2BFrInQAF1F9fKILBZOXoMTAWI7jx9UXmstrtIyH2ul3uh5UxSDeZ1PEOve2xUjWhhMEfeqMEJ3icwTBBghn748T4X35B0nlgWyNjesu1dwDVmcFfoQj5E%2FYZT5aYaQSGLaLv%2BgLuvuXOu%2F5gbH8Qdr%2B7wVfo4Jk29%2FoIoBmj7sWogOhRIkNIDS1i%2BCDG4PWyXfSXy7Vbgwcyy9iFH7Lnp5oLwLCsZXYz5%2BAgB6tBLPeSyJYETu4ExBdWuRN7wpxYiDpE1YHc4P4qKBNp7RwZmEMcchZcvDlmKu3nN1Qrf9e3zSP2OSoqMs%2FHAqqJgMIX%2FEPba3ciKhsykg%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+2023-11-17 22:31:41,275 ERROR   wandb-upload_3:17480 [internal_api.py:upload_file():2559] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'dnu2A459OiITvt3m3hi0Og==', 'Content-Length': '8647282'}
+2023-11-17 22:31:41,275 ERROR   wandb-upload_3:17480 [internal_api.py:upload_file():2561] upload_file response body: 
+2023-11-17 22:31:42,235 INFO    wandb-upload_12:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp4y5m1orr
+2023-11-17 22:31:42,549 INFO    wandb-upload_7:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpxspgpotg
+2023-11-17 22:31:42,579 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:42,579 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:42,853 INFO    wandb-upload_13:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmphjgyl624
+2023-11-17 22:31:43,055 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:43,062 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:43,250 INFO    wandb-upload_2:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpvhom2ycl
+2023-11-17 22:31:43,897 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:44,342 INFO    wandb-upload_8:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmppmiz0ix8
+2023-11-17 22:31:45,066 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:45,066 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:45,541 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:45,551 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:48,167 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:48,167 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:48,926 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:50,182 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:50,182 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:50,660 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:50,660 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:52,674 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:52,675 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:53,136 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:53,158 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:53,967 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:31:54,231 INFO    wandb-upload_3:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp1cidcnrk
+2023-11-17 22:31:55,164 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:55,164 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-11-17 22:31:55,647 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:55,652 ERROR   gpu       :17480 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-11-17 22:31:56,030 INFO    SenderThread:17480 [sender.py:send_request_log_artifact():1446] logged artifact run_02qbk3kp_model - {'id': 'QXJ0aWZhY3Q6NjQxNjc4NjQ3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNjcxNjQwMg==', 'latestArtifact': None}}
+2023-11-17 22:31:56,036 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 22:31:56,470 DEBUG   SenderThread:17480 [sender.py:send():380] send: telemetry
+2023-11-17 22:31:56,470 DEBUG   SenderThread:17480 [sender.py:send():380] send: exit
+2023-11-17 22:31:56,470 INFO    SenderThread:17480 [sender.py:send_exit():585] handling exit code: 0
+2023-11-17 22:31:56,470 INFO    SenderThread:17480 [sender.py:send_exit():587] handling runtime: 8
+2023-11-17 22:31:56,472 INFO    SenderThread:17480 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 22:31:56,473 INFO    SenderThread:17480 [sender.py:send_exit():593] send defer
+2023-11-17 22:31:56,473 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:31:56,473 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:56,473 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-17 22:31:56,474 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:56,474 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-17 22:31:56,474 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 1
+2023-11-17 22:31:56,474 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:56,474 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-17 22:31:56,475 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:56,475 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-17 22:31:56,475 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 2
+2023-11-17 22:31:56,475 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:56,475 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-17 22:31:56,475 INFO    HandlerThread:17480 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-17 22:31:56,476 DEBUG   SystemMonitor:17480 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-17 22:31:56,487 INFO    HandlerThread:17480 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-17 22:31:56,487 DEBUG   SystemMonitor:17480 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-17 22:31:56,488 DEBUG   SystemMonitor:17480 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-17 22:31:56,488 INFO    HandlerThread:17480 [interfaces.py:finish():202] Joined disk monitor
+2023-11-17 22:31:56,915 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\config.yaml
+2023-11-17 22:31:56,915 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-summary.json
+2023-11-17 22:31:57,029 ERROR   gpu       :17480 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-17 22:31:57,029 INFO    HandlerThread:17480 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-17 22:31:57,029 INFO    HandlerThread:17480 [interfaces.py:finish():202] Joined memory monitor
+2023-11-17 22:31:57,030 INFO    HandlerThread:17480 [interfaces.py:finish():202] Joined network monitor
+2023-11-17 22:31:57,030 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:31:57,030 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:57,030 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-17 22:31:57,031 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 3
+2023-11-17 22:31:57,031 DEBUG   SenderThread:17480 [sender.py:send():380] send: stats
+2023-11-17 22:31:57,031 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:57,031 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:31:57,032 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-17 22:31:57,032 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:57,033 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-17 22:31:57,033 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 4
+2023-11-17 22:31:57,033 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:57,033 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-17 22:31:57,033 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:57,033 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-17 22:31:57,033 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 5
+2023-11-17 22:31:57,033 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:57,034 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-17 22:31:57,034 DEBUG   SenderThread:17480 [sender.py:send():380] send: summary
+2023-11-17 22:31:57,035 INFO    SenderThread:17480 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 22:31:57,035 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:57,035 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-17 22:31:57,035 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 6
+2023-11-17 22:31:57,035 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:57,035 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-17 22:31:57,036 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:57,036 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-17 22:31:57,039 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 22:31:57,672 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 7
+2023-11-17 22:31:57,672 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:31:57,672 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-17 22:31:57,674 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:31:57,674 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-17 22:31:57,930 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\output.log
+2023-11-17 22:31:57,930 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-summary.json
+2023-11-17 22:31:57,930 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\config.yaml
+2023-11-17 22:31:58,006 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:01,070 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 8
+2023-11-17 22:32:01,070 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:01,071 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:01,071 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-17 22:32:01,072 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:01,072 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-17 22:32:01,072 INFO    SenderThread:17480 [job_builder.py:build():298] Attempting to build job artifact
+2023-11-17 22:32:01,073 INFO    SenderThread:17480 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-11-17 22:32:01,074 INFO    SenderThread:17480 [job_builder.py:build():404] adding wandb-job metadata file
+2023-11-17 22:32:01,077 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 9
+2023-11-17 22:32:01,077 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:01,077 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-17 22:32:01,077 DEBUG   SenderThread:17480 [sender.py:send():380] send: artifact
+2023-11-17 22:32:01,949 INFO    Thread-16 :17480 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\output.log
+2023-11-17 22:32:02,043 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:03,558 INFO    wandb-upload_0:17480 [upload_job.py:push():86] Skipped uploading C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmp3eql4xhv
+2023-11-17 22:32:04,550 INFO    wandb-upload_10:17480 [upload_job.py:push():89] Uploaded file C:\Users\sagoi\AppData\Local\wandb\wandb\artifacts\staging\tmpvoak_nlk
+2023-11-17 22:32:07,088 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-17 22:32:07,221 INFO    SenderThread:17480 [sender.py:send_artifact():1458] sent artifact job-https___github.com_JatinSingh28_grammarly-reverse-engineered.git_seq2seqRNN.py - {'id': 'QXJ0aWZhY3Q6NjQxNjc5MjAw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNjcxNTExNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQxNjczNjQ5', 'versionIndex': 0}}}
+2023-11-17 22:32:07,221 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:07,226 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 22:32:07,226 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-17 22:32:07,227 INFO    SenderThread:17480 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-17 22:32:08,010 INFO    SenderThread:17480 [dir_watcher.py:finish():388] scan: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files
+2023-11-17 22:32:08,011 INFO    SenderThread:17480 [dir_watcher.py:finish():402] scan save: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\config.yaml config.yaml
+2023-11-17 22:32:08,011 INFO    SenderThread:17480 [dir_watcher.py:finish():402] scan save: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\output.log output.log
+2023-11-17 22:32:08,015 INFO    SenderThread:17480 [dir_watcher.py:finish():402] scan save: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\requirements.txt requirements.txt
+2023-11-17 22:32:08,018 INFO    SenderThread:17480 [dir_watcher.py:finish():402] scan save: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-metadata.json wandb-metadata.json
+2023-11-17 22:32:08,018 INFO    SenderThread:17480 [dir_watcher.py:finish():402] scan save: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-summary.json wandb-summary.json
+2023-11-17 22:32:08,019 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 10
+2023-11-17 22:32:08,019 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:08,020 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:08,021 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-17 22:32:08,021 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:08,026 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-17 22:32:08,027 INFO    SenderThread:17480 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-17 22:32:08,097 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:08,098 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:08,755 INFO    wandb-upload_9:17480 [upload_job.py:push():131] Uploaded file C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\config.yaml
+2023-11-17 22:32:09,098 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:09,099 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:09,588 INFO    wandb-upload_1:17480 [upload_job.py:push():131] Uploaded file C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\output.log
+2023-11-17 22:32:09,648 INFO    wandb-upload_5:17480 [upload_job.py:push():131] Uploaded file C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\wandb-summary.json
+2023-11-17 22:32:10,106 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:10,107 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:10,492 INFO    wandb-upload_11:17480 [upload_job.py:push():131] Uploaded file C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\files\requirements.txt
+2023-11-17 22:32:10,702 INFO    Thread-15 (_thread_body):17480 [sender.py:transition_state():613] send defer: 11
+2023-11-17 22:32:10,702 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:10,702 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-17 22:32:10,703 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:10,703 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-17 22:32:10,703 INFO    SenderThread:17480 [file_pusher.py:join():181] waiting for file pusher
+2023-11-17 22:32:10,703 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 12
+2023-11-17 22:32:10,704 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:10,704 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-17 22:32:10,704 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:10,704 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-17 22:32:10,704 INFO    SenderThread:17480 [file_stream.py:finish():595] file stream finish called
+2023-11-17 22:32:11,121 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:12,037 INFO    SenderThread:17480 [file_stream.py:finish():599] file stream finish is done
+2023-11-17 22:32:12,038 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 13
+2023-11-17 22:32:12,039 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:12,040 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:12,041 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-17 22:32:12,041 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:12,042 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-17 22:32:12,042 INFO    SenderThread:17480 [sender.py:transition_state():613] send defer: 14
+2023-11-17 22:32:12,043 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: defer
+2023-11-17 22:32:12,043 INFO    HandlerThread:17480 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-17 22:32:12,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: final
+2023-11-17 22:32:12,045 DEBUG   SenderThread:17480 [sender.py:send():380] send: footer
+2023-11-17 22:32:12,045 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: defer
+2023-11-17 22:32:12,045 INFO    SenderThread:17480 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-17 22:32:12,048 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-17 22:32:12,048 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: poll_exit
+2023-11-17 22:32:12,051 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 22:32:12,059 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: server_info
+2023-11-17 22:32:12,059 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-17 22:32:12,062 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-17 22:32:12,062 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: job_info
+2023-11-17 22:32:12,064 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: server_info
+2023-11-17 22:32:12,456 DEBUG   SenderThread:17480 [sender.py:send_request():407] send_request: job_info
+2023-11-17 22:32:12,457 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 22:32:12,461 DEBUG   HandlerThread:17480 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-17 22:32:12,462 INFO    HandlerThread:17480 [handler.py:finish():866] shutting down handler
+2023-11-17 22:32:13,471 INFO    SenderThread:17480 [sender.py:finish():1536] shutting down sender
+2023-11-17 22:32:13,471 INFO    SenderThread:17480 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-17 22:32:13,472 INFO    SenderThread:17480 [file_pusher.py:join():181] waiting for file pusher
+2023-11-17 22:32:13,472 INFO    WriterThread:17480 [datastore.py:close():294] close: C:\Users\sagoi\OneDrive\Desktop\Grammarly\wandb\run-20231117_223105-02qbk3kp\run-02qbk3kp.wandb

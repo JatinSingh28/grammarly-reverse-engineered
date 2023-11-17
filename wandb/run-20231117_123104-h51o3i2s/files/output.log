@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\baseTorch.py", line 172, in <module>
+    output = model(encoder_input, decoder_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\baseTorch.py", line 137, in forward
+    encoder_outputs, (encoder_hidden, encoder_cell) = self.encoder(encoder_input)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\baseTorch.py", line 109, in forward
+    embedded = self.embedding(input)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\torch\nn\functional.py", line 2233, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.19 GiB. GPU 0 has a total capacty of 4.00 GiB of which 372.15 MiB is free. Of the allocated memory 2.04 GiB is allocated by PyTorch, and 11.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
