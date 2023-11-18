@@ -1,0 +1,64 @@
+
+Epoch 1/15
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25/25 [==============================] - ETA: 0s - loss: 14.2221 - accuracy: 0.8861
+25/25 [==============================] - 143s 5s/step - loss: 14.2221 - accuracy: 0.8861 - val_loss: 9.9048 - val_accuracy: 0.9544
+Epoch 2/15
+25/25 [==============================] - ETA: 0s - loss: 12.4696 - accuracy: 0.9524
+25/25 [==============================] - 97s 4s/step - loss: 12.4696 - accuracy: 0.9524 - val_loss: 16.0355 - val_accuracy: 0.9544
+Epoch 3/15
+25/25 [==============================] - ETA: 0s - loss: 15.9931 - accuracy: 0.9524
+25/25 [==============================] - 108s 4s/step - loss: 15.9931 - accuracy: 0.9524 - val_loss: 20.0952 - val_accuracy: 0.9544
+Epoch 4/15
+25/25 [==============================] - ETA: 0s - loss: 19.0864 - accuracy: 0.9520
+25/25 [==============================] - 96s 4s/step - loss: 19.0864 - accuracy: 0.9520 - val_loss: 23.9599 - val_accuracy: 0.9544
+Epoch 5/15
+25/25 [==============================] - ETA: 0s - loss: 22.1971 - accuracy: 0.9524
+
+25/25 [==============================] - 111s 5s/step - loss: 22.1971 - accuracy: 0.9524 - val_loss: 27.8932 - val_accuracy: 0.9544
+Epoch 6/15
+25/25 [==============================] - ETA: 0s - loss: 25.2466 - accuracy: 0.9517
+[34m[1mwandb[39m[22m: Adding directory to artifact (.\models)... Done. 0.4s
+25/25 [==============================] - 119s 5s/step - loss: 25.2466 - accuracy: 0.9517 - val_loss: 31.6594 - val_accuracy: 0.9544
+Epoch 7/15
+25/25 [==============================] - ETA: 0s - loss: 28.2307 - accuracy: 0.9513
+25/25 [==============================] - 119s 5s/step - loss: 28.2307 - accuracy: 0.9513 - val_loss: 35.4319 - val_accuracy: 0.9544
+Epoch 8/15
+25/25 [==============================] - ETA: 0s - loss: 31.4645 - accuracy: 0.9510
+25/25 [==============================] - 130s 5s/step - loss: 31.4645 - accuracy: 0.9510 - val_loss: 39.3632 - val_accuracy: 0.9516
+Epoch 9/15
+25/25 [==============================] - ETA: 0s - loss: 34.5863 - accuracy: 0.9483
+25/25 [==============================] - 128s 5s/step - loss: 34.5863 - accuracy: 0.9483 - val_loss: 43.3213 - val_accuracy: 0.9436
+Epoch 10/15
+25/25 [==============================] - 103s 4s/step - loss: 37.7733 - accuracy: 0.9483 - val_loss: 47.2661 - val_accuracy: 0.9425
+Epoch 11/15
+25/25 [==============================] - ETA: 0s - loss: 40.8500 - accuracy: 0.9483
+25/25 [==============================] - 100s 4s/step - loss: 40.8500 - accuracy: 0.9483 - val_loss: 51.1389 - val_accuracy: 0.9425
+Epoch 12/15
+25/25 [==============================] - ETA: 0s - loss: 44.1527 - accuracy: 0.9483
+25/25 [==============================] - 114s 5s/step - loss: 44.1527 - accuracy: 0.9483 - val_loss: 55.1362 - val_accuracy: 0.9420
+Epoch 13/15
+25/25 [==============================] - ETA: 0s - loss: 47.3386 - accuracy: 0.9483
+[34m[1mwandb[39m[22m: Adding directory to artifact (.\models)... Done. 0.4s
+25/25 [==============================] - 110s 4s/step - loss: 47.3386 - accuracy: 0.9483 - val_loss: 59.0163 - val_accuracy: 0.9420
+Epoch 14/15

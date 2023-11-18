@@ -1,0 +1,66 @@
+
+Epoch 1/15
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25/25 [==============================] - 85s 2s/step - loss: 14.2316 - accuracy: 0.8935 - val_loss: 9.9046 - val_accuracy: 0.9544
+Epoch 2/15
+
+
+
+
+
+ 8/25 [========>.....................] - ETA: 28s - loss: 10.4299 - accuracy: 0.9540
+Traceback (most recent call last):
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\LSTM + Attention\train.py", line 35, in <module>
+    model.fit([encoder_input_data,decoder_input_data],decoder_target_data,batch_size=batch_size,
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\training.py", line 1807, in fit
+    tmp_logs = self.train_function(iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 832, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 868, in _call
+    return tracing_compilation.call_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compilation.py", line 139, in call_function
+    return function._call_flat(  # pylint: disable=protected-access
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\polymorphic_function\concrete_function.py", line 1323, in _call_flat
+    return self._inference_function.call_preflattened(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\polymorphic_function\atomic_function.py", line 216, in call_preflattened
+    flat_outputs = self.call_flat(*args)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\polymorphic_function\atomic_function.py", line 251, in call_flat
+    outputs = self._bound_context.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\context.py", line 1486, in call_function
+    outputs = execute.execute(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\tensorflow\python\eager\execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

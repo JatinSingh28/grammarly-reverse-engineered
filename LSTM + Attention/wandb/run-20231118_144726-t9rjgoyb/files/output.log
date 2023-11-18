@@ -1,0 +1,25 @@
+
+Epoch 1/4
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+WARNING:tensorflow:From C:\Users\sagoi\OneDrive\Desktop\Grammarly\venv\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+
+
+
+
+
+
+
+
+25/25 [==============================] - ETA: 0s - loss: 14.1574 - accuracy: 0.8918
+[34m[1mwandb[39m[22m: Adding directory to artifact (.\models)... Done. 0.3s
+25/25 [==============================] - 64s 2s/step - loss: 14.1574 - accuracy: 0.8918 - val_loss: 9.8554 - val_accuracy: 0.9544
+Epoch 2/4
+25/25 [==============================] - ETA: 0s - loss: 12.5731 - accuracy: 0.9524
+25/25 [==============================] - 44s 2s/step - loss: 12.5731 - accuracy: 0.9524 - val_loss: 16.1779 - val_accuracy: 0.9544
+Epoch 3/4
+25/25 [==============================] - 54s 2s/step - loss: 16.1664 - accuracy: 0.9524 - val_loss: 20.3165 - val_accuracy: 0.9544
+Epoch 4/4
+25/25 [==============================] - ETA: 0s - loss: 19.3208 - accuracy: 0.9524
+
+25/25 [==============================] - 51s 2s/step - loss: 19.3208 - accuracy: 0.9524 - val_loss: 24.2650 - val_accuracy: 0.9544
